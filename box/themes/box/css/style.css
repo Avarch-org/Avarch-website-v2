@@ -871,6 +871,7 @@ b i:last-child {
     transform: translateY(200px);
     height:70vh;
     width:100%;
+    font-weight: 600;
 }
 .con5-wrapper{
   transform: translateY(-150px);
@@ -909,7 +910,7 @@ b i:last-child {
   text-transform: capitalize;
 }
 #val-p{
-  font-size:2.1rem;
+  font-size:2.4rem;
 }
 .photography1{
    position: relative;
@@ -938,16 +939,18 @@ b i:last-child {
      left:35px;
     justify-content: center;
     align-items: center;
+    transition: 0.5s;
     
 
     
 }
 
 
-.graphics1{
+
+/* .graphics1{
     width:380px;
     height:385px;
-}
+} */
 .child-vid{
     width:370px;
     height:370px;
@@ -957,6 +960,7 @@ b i:last-child {
     height:30vh;
     width:100%;
     text-align:center;
+    font-weight:600;
 }
 
 
@@ -976,15 +980,13 @@ b i:last-child {
 
 @media (max-width:1200px) {
     .tv img{
-        width:500px;
-        height:600px;
+        width:470px;
+        height:500px;
     }
-    .main-vid{
-        width:90%;
-        height:100px;
-        top:0;
-        left:0;
-
+    
+    .photography1 iframe{
+        width:420px;
+        height:400px;
     }
     #sec-img{
         position:absolute;
@@ -1012,11 +1014,19 @@ b i:last-child {
     }
     .content5{
         height:100vh;
+     
+        
+    }
+    .content5 h1{
+       
+        position: relative;
+        margin-top: -100px;
     }
     .graphics1{
         width:500px;
         height:485px;
     }
+    
     .child-vid{
         width:500px;
         height:470px;
