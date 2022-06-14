@@ -866,6 +866,7 @@ b i:last-child {
 
 
 
+
 .content5{
     transform: translateY(200px);
     height:70vh;
@@ -988,20 +989,22 @@ b i:last-child {
     #sec-img{
         position:absolute;
         background-position: center;
-        width:200px;
+        width:150px;
         height:150px;
-       left:250px;
-        transform: translateY(-160px);
+       left:150px;
+        transform: translateY(-360px);
         justify-content: center;
         margin:0 auto;
     }
     #sec-img1{
-        left:250px;
+        left:150px;
+        margin-top: 20rem;
     }
     .main-vid{
         width:500px;
         height:600px;
     }
+
     .con5-wrapper{
         flex-wrap: wrap;
         flex-direction: column;
