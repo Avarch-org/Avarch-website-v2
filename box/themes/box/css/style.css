@@ -38,7 +38,9 @@ body {
     line-height: 1.8;
     color: #999;
     overflow-x: hidden;
+    
 }
+
 
 .no-padding {
     padding-left: 0;
@@ -431,6 +433,7 @@ h5 {
 .box-intro .table-cell {
     display: table-cell;
     vertical-align: middle;
+    z-index:222;
 }
 
 .box-intro em {
@@ -455,7 +458,9 @@ b i:last-child {
     color: #999;
     line-height: 1.7
 }
+.box-intro{
 
+}
 
 /* mouse effect */
 
@@ -693,6 +698,7 @@ b i:last-child {
         transform: translateZ(-20px) rotateX(-90deg);
     }
 }
+
 
 
 /* portfolio section
@@ -1403,3 +1409,23 @@ textarea:focus {
     }
 }
 
+
+#cursor{
+    width:30px;
+    height:30px;
+    position: absolute;
+   border:1px solid red;
+    border-radius: 50%;
+   transform: scale(0.1);
+   z-index:-1;
+    animation:ani 1s infinite ease-in-out;
+}
+@keyframes ani {
+    0%{
+   transform: scale(1.2);
+        
+    }
+    100%{
+        transform:scale(0.1);
+    }
+}
