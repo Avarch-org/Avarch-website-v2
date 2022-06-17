@@ -875,7 +875,7 @@ b i:last-child {
 
 .content5{
     position: absolute;
-    transform: translateY(250px);
+    transform: translateY(270px);
     height:30vh;
     width:100%;
     font-weight: 600;
@@ -968,14 +968,14 @@ b i:last-child {
   
 } */
 .child-vid{
-    width:370px;
-    height:250px;
+    width:400px;
+    height:270px;
     border-radius: 10px 20px;
 }
 
 .content6{
-    transform:translateY(250px);
-    height:60vh;
+    transform:translateY(330px);
+    height:65vh;
     width:100%;
     text-align:center;
     font-weight:600;
@@ -1006,10 +1006,11 @@ b i:last-child {
 
 }
 .con7-wrapper{
-   margin-top:100px;
+   margin-top:80px;
     position: relative;
     width:100%;
      display: flex;
+     justify-content: center;
 }
 
 .content7 .vid-left-wrapper{
