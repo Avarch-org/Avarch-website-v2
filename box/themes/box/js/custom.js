@@ -85,6 +85,8 @@ function animateValue(obj, start, end, duration) {
   const obj2 = document.querySelector("#value1");
   const obj3 = document.querySelector("#value2");
   let count2 =2;
+
+  if(maindiv){
   maindiv.addEventListener('mouseover',()=>{
       
 
@@ -95,7 +97,7 @@ function animateValue(obj, start, end, duration) {
       }
       count = count-2
   })
-
+  }
   var cursor = document.getElementById("cursor")
 document.onmousemove = function(e){
     cursor.style.left=(e.pageX-25) + "px";
@@ -103,3 +105,46 @@ document.onmousemove = function(e){
     cursor.style.display = "block";
 }
 
+
+
+
+//Fetch the image 
+
+const dt = fetch("./Data/profile.json")
+
+
+dt.then(res=>res.json()).then(r=>{
+
+    console.log(r)
+
+    document.querySelector(".con1-wrapper").innerHTML =`
+    
+    ${r.map((k)=>{
+
+        return `
+        <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="${k.image}" alt="Avatar">
+                    <h3>${k.fullName}</h3>
+                  </div>
+                  <div class="flip-card-back">
+                    
+                    <p>${k.roledesignation}</p>
+
+                    <a href="${k.twitterLinkOfYourProfile}"target="_blank"id="al"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="${k.githubLinkOfYourProfile}"target="_blank"id="al"><ion-icon name="logo-github"></ion-icon></a>
+                    <a href="${k.linkedinLinkOfYourProfile}"target="_blank"id="al"><ion-icon name="logo-linkedin"></ion-icon></a>
+
+                    
+                   
+                  </div>
+                </div>
+            </div>
+        
+        
+        `
+    }).join('')}
+    
+    `
+})
